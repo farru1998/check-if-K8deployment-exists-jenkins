@@ -48,7 +48,7 @@ pipeline {
 								sshTransfer(
 									cleanRemote: false, 
 									excludes: '', 
-									execCommand: 'kubectl set image deployment/simpleapp-deployment simpleapp-container=mfarhan1998/simpleapp:${BUILD_NUMBER} --record', 
+									execCommand: 'kubectl get deployments', 
 									execTimeout: 120000, 
 									flatten: false, 
 									makeEmptyDirs: false, 
